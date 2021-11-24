@@ -1,0 +1,49 @@
+﻿@model WebApplication1.Models.Service
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ServiceDetails</title>
+</head>
+<body>
+    <div>
+        <h4>Service</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Port)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Port)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Maintainer)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Maintainer)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>        
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
